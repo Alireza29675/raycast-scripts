@@ -9,7 +9,6 @@
 # Optional parameters:
 # @raycast.icon 🌍
 # @raycast.argument1 { "type": "text", "placeholder": "Query" }
-# @raycast.argument2 { "type": "text", "placeholder": "From", "optional": true }
 # @raycast.argument3 { "type": "text", "placeholder": "To", "optional": true }
 
 # Documentation:
@@ -27,8 +26,8 @@ require 'json'
 require 'open-uri'
 
 q = ARGV[0]
-sl = ARGV[1].nil? || ARGV[1].empty? ? "en" : ARGV[1] # Source language
-tl = ARGV[2].nil? || ARGV[2].empty? ? "ro" : ARGV[2] # Target language
+sl = "auto"
+tl = ARGV[1].nil? || ARGV[1].empty? ? "fa" : ARGV[1] # Target language
 
 # If the length of the query is less than 2, it won't return anything valid.
 if q.length < 2
