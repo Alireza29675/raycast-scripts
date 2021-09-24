@@ -17,8 +17,9 @@
 
 # Timezones can be found in /usr/share/zoneinfo
 
-nyc=$(TZ=America/New_York date +"%H:%M")
-lon=$(TZ=Europe/London date +"%H:%M")
-bne=$(TZ=Australia/Brisbane date +"%H:%M")
+mo=$(TZ=Canada/Eastern date +"%H:%M")
+sf=$(TZ=US/Pacific date +"%H:%M")
+lo=$(TZ=Europe/London date +"%H:%M")
+euc=$(TZ=Europe/Berlin date +"%H:%M")
 
-echo "New York City: $nyc | London: $lon | Brisbane: $bne"
+echo "Montreal: $mo | SF: $sf | London: $lo | Milan/Berlin: $euc"
