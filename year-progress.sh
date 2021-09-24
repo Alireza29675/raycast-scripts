@@ -23,7 +23,7 @@
 # Configuration
 
 OUTPUT_INCLUDES_BAR=true
-BAR_LENGTH=33
+BAR_LENGTH=35
 
 
 # Main program
@@ -50,10 +50,10 @@ filled_element_count=$(($BAR_LENGTH * $percentage / 100))
 blank_element_count=$(($BAR_LENGTH - $filled_element_count))
 bar=""
 for ((i = 0; i < $filled_element_count; i++)) {
-  bar=${bar}"▓"
+  bar=${bar}"●"
 }
 for ((i = 0; i < $blank_element_count; i++)) {
-  bar=${bar}"░"
+  bar=${bar}"・"
 }
 
 if [ "$OUTPUT_INCLUDES_BAR" = true ]
