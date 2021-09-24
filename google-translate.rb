@@ -8,8 +8,8 @@
 
 # Optional parameters:
 # @raycast.icon 🌍
-# @raycast.argument1 { "type": "text", "placeholder": "Query" }
-# @raycast.argument3 { "type": "text", "placeholder": "To", "optional": true }
+# @raycast.argument1 { "type": "text", "placeholder": "Phrase" }
+# @raycast.argument3 { "type": "text", "placeholder": "[fa]", "optional": true }
 
 # Documentation:
 # @raycast.description Translates via Google Translate
