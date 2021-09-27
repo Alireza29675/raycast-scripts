@@ -22,4 +22,4 @@ sf=$(TZ=US/Pacific date +"%H:%M")
 lo=$(TZ=Europe/London date +"%H:%M")
 euc=$(TZ=Europe/Berlin date +"%H:%M")
 
-echo "Montreal: $mo | SF: $sf | London: $lo | Milan/Berlin: $euc"
+echo "Montreal: $mo | SF: $sf | London: $lo | Amsterdam/Milan/Berlin: $euc"
